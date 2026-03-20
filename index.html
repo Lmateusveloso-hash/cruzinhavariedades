@@ -3912,5 +3912,25 @@ if (scroll && dots.length) {
   });
 }
 </script>
+  <script>
+const scroll = document.getElementById("categoriasScroll");
+const dots = document.querySelectorAll(".dot");
+
+if (scroll && dots.length) {
+  scroll.addEventListener("scroll", () => {
+    const maxScroll = scroll.scrollWidth - scroll.clientWidth;
+    if (maxScroll <= 0) return;
+
+    const scrollPosition = scroll.scrollLeft;
+    const index = Math.round((scrollPosition / maxScroll) * (dots.length - 1));
+
+    dots.forEach(dot => dot.classList.remove("active"));
+
+    if (dots[index]) {
+      dots[index].classList.add("active");
+    }
+  });
+}
+</script>
 </body>
 </html>
