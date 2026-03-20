@@ -2297,6 +2297,26 @@
         grid-template-columns:repeat(4, 1fr);
       }
     }
+    .indicadores {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background: #f8b6c1;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.dot.active {
+  width: 25px;
+  border-radius: 10px;
+  background: #d65a6f;
+}
   </style>
 </head>
 <body>
