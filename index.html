@@ -2400,6 +2400,49 @@
   border-radius: 20px;
   background: #d95f78;
 }
+    .categorias-scroll{
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.categorias-scroll::-webkit-scrollbar{
+  display: none;
+}
+
+.categoria-card{
+  min-width: 140px;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.categoria-imagem{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f8dbe2;
+  margin: 0 auto 12px;
+}
+
+.categoria-imagem img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.categoria-card span{
+  display: block;
+  font-size: 18px;
+  color: #4a4a4a;
+  font-weight: 500;
+  margin: 0;
+}
   </style>
 </head>
 <body>
@@ -2681,64 +2724,68 @@
       </button>
 
       <div class="categorias-scroll" id="categoriasScroll">
-        <div class="categoria-card">
-          <div class="categoria-imagem">
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop" alt="Body Splash">
-          </div>
-          <span>Body Splash</span>
-        </div>
-
-        <div class="categoria-card">
-          <div class="categoria-imagem">
-            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop" alt="Kits Cruzinha">
-          </div>
-          <span>Kits Cruzinha</span>
-        </div>
-
-        <div class="categoria-card">
-          <div class="categoria-imagem">
-            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=800&auto=format&fit=crop" alt="Favoritos">
-          </div>
-          <span>Favoritos</span>
-        </div>
-
-        <div class="categoria-card">
-          <div class="categoria-imagem">
-            <img src="https://images.unsplash.com/photo-1515377909573-c4788e51af15?q=80&w=800&auto=format&fit=crop" alt="Perfumes">
-          </div>
-          <span>Perfumes</span>
-        </div>
-
   <div class="categoria-card">
-    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80">
-    <p>Feminino</p>
+    <div class="categoria-imagem">
+      <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80" alt="Body Splash">
+    </div>
+    <span>Body Splash</span>
   </div>
 
   <div class="categoria-card">
-    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80">
-    <p>Masculino</p>
+    <div class="categoria-imagem">
+      <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80" alt="Kits Cruzinha">
+    </div>
+    <span>Kits Cruzinha</span>
   </div>
 
   <div class="categoria-card">
-    <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=600&q=80">
-    <p>Infantil</p>
+    <div class="categoria-imagem">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80" alt="Favoritos">
+    </div>
+    <span>Favoritos</span>
   </div>
 
   <div class="categoria-card">
-    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80">
-    <p>Perfumes</p>
+    <div class="categoria-imagem">
+      <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80" alt="Perfumes">
+    </div>
+    <span>Perfumes</span>
   </div>
 
   <div class="categoria-card">
-    <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=600&q=80">
-    <p>Semi joias</p>
+    <div class="categoria-imagem">
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Feminino">
+    </div>
+    <span>Feminino</span>
   </div>
 
   <div class="categoria-card">
-    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80">
-    <p>Acessórios</p>
+    <div class="categoria-imagem">
+      <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Masculino">
+    </div>
+    <span>Masculino</span>
   </div>
 
+  <div class="categoria-card">
+    <div class="categoria-imagem">
+      <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=600&q=80" alt="Infantil">
+    </div>
+    <span>Infantil</span>
+  </div>
+
+  <div class="categoria-card">
+    <div class="categoria-imagem">
+      <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=600&q=80" alt="Semi joias">
+    </div>
+    <span>Semi joias</span>
+  </div>
+
+  <div class="categoria-card">
+    <div class="categoria-imagem">
+      <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80" alt="Acessórios">
+    </div>
+    <span>Acessórios</span>
+  </div>
 </div>
 
       <button class="seta-categoria seta-direita" id="catNext">
